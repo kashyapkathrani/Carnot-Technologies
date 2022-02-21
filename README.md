@@ -33,10 +33,6 @@ I have used Django as the framework for developing this Solution.
 
 I have used Django REST framework for creating Enpoint.
 
-### The endpoint created is :
-
-1. device/{device_id} : The endpoint returns latest device data by fetching it from Redis Cache.
-
 ### Processing the data CSV
 
 To process the CSV file, I have created a function, [processCSV](https://github.com/kashyapkathrani/Carnot-Technologies/blob/master/APIs/utils.py), which runs on start of Django Application and processes the file as follows:
@@ -49,5 +45,9 @@ To process the CSV file, I have created a function, [processCSV](https://github.
     2. If present, Checks if timestamp of new entry is greater than one stored in Redis. If yes, then updating data in redis.
 
 
+### The endpoint created is :
 
+1. device/{device_id} : The endpoint returns latest device data by fetching it from Redis Cache.
+
+![output image](https://github.com/kashyapkathrani/Carnot-Technologies/blob/master/Carnot/static/get-output.png)
 
