@@ -4,9 +4,20 @@ from rest_framework.decorators import api_view
 from django.core.cache import cache
 import json
 
+@api_view(['GET'])
+def getAllDevicesData(request):
+
+    data = []
+
+    for key in cache.keys("*"):
+        value = cache.get(key)
+        data.append(json.loads(value))
+    
+    return Response(data)
+
 
 @api_view(['GET'])
-def getDeviceData(request, device_id):
+def getDeviceDataById(request, device_id):
 
     data = cache.get(device_id)
 

@@ -47,7 +47,12 @@ To process the CSV file, I have created a function, [processCSV](https://github.
 
 ### The endpoint created is :
 
-1. device/{device_id} : The endpoint returns latest device data by fetching it from Redis Cache.
+1. device/ : The endpoints returns latest data for all the device stored in Redis.
 
-![output image](https://github.com/kashyapkathrani/Carnot-Technologies/blob/master/Carnot/static/get-output.png)
+![output image](https://github.com/kashyapkathrani/Carnot-Technologies/blob/master/Carnot/static/get-all-devices.png)
+
+
+2. device/{device_id} : For a given device id, the endpoint returns latest device data by fetching it from Redis Cache.
+
+![output image](https://github.com/kashyapkathrani/Carnot-Technologies/blob/master/Carnot/static/get-by-device-id.png)
 
