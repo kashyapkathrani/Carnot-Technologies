@@ -7,7 +7,7 @@ import json
 
 @api_view(['GET'])
 def getDeviceData(request, device_id):
-    # utils.processCSV()
+
     data = cache.get(device_id)
 
     if data:
