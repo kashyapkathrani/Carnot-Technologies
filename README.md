@@ -46,7 +46,7 @@ To process the CSV file, I have created a function, [processCSV](https://github.
     2. If present, Checks if timestamp of new entry is greater than one stored in Redis. If yes, then updating data in redis.
 
 
-### The endpoint created is :
+### The endpoints created are :
 
 1. device/ : The endpoints returns latest data for all the device stored in Redis.
 
