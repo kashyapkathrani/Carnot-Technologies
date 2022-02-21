@@ -15,6 +15,7 @@ of Redis data. If yes, update the Redis data with new excel data; otherwise, kee
 data.
 5. Now create an API endpoint (in the framework of your choice) that takes device ID and returns
 device information in response.
+
 Output: Share entire data stored in Redis cache
 
 # Solution
